@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sattar"
+        style="@style/CategoryStyle"
+        android:background="@color/Dr_Alsattar"
+        android:text="@string/Dr_AbdAlsattar" />
+
+    <TextView
+        android:id="@+id/Hussein"
+        style="@style/CategoryStyle"
+        android:background="@color/Dr_Hussein"
+        android:text="@string/Dr_Hussein" />
+
+    <TextView
+        android:id="@+id/Omar"
+        style="@style/CategoryStyle"
+        android:background="@color/Dr_Omar"
+        android:text="@string/Dr_Mohamed" />
+
+
+
+</LinearLayout>
