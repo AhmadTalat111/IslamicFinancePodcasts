@@ -5,16 +5,21 @@ public class Lecture {
     private String mLectureDuration;
     private int mPlayButton;
 
-    public Lecture (String lectureInfo, String lectureDuration, int playButton){
+    public Lecture(String lectureInfo, String lectureDuration, int playButton) {
         mLectureInfo = lectureInfo;
         mLectureDuration = lectureDuration;
         mPlayButton = playButton;
     }
+
     public String getLectureInfo() {
         return mLectureInfo;
     }
-    public String getLectureDuration(){
+
+    public String getLectureDuration() {
         return mLectureDuration;
     }
-    public int getPlayButton(){return mPlayButton;}
+
+    public int getPlayButton() {
+        return mPlayButton;
+    }
 }

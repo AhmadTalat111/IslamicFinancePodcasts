@@ -12,15 +12,16 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class LectureAdapter extends ArrayAdapter <Lecture> {
-    public LectureAdapter (Activity context, ArrayList<Lecture> lectures){
+public class LectureAdapter extends ArrayAdapter<Lecture> {
+    public LectureAdapter(Activity context, ArrayList<Lecture> lectures) {
         super(context, 0, lectures);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
@@ -36,5 +37,6 @@ public class LectureAdapter extends ArrayAdapter <Lecture> {
         ImageView playButton = (ImageView) listItemView.findViewById(R.id.play);
         playButton.setImageResource(currentLecture.getPlayButton());
 
-        return listItemView;    }
+        return listItemView;
+    }
 }
